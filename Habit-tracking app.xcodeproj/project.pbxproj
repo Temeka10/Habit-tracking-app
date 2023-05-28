@@ -11,6 +11,10 @@
 		049297472A23EC0300CB11AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049297462A23EC0300CB11AD /* ContentView.swift */; };
 		049297492A23EC0500CB11AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049297482A23EC0500CB11AD /* Assets.xcassets */; };
 		0492974C2A23EC0500CB11AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0492974B2A23EC0500CB11AD /* Preview Assets.xcassets */; };
+		049297532A23F2B900CB11AD /* Habit-Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049297522A23F2B900CB11AD /* Habit-Item.swift */; };
+		049297552A23F37A00CB11AD /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049297542A23F37A00CB11AD /* Habits.swift */; };
+		049297572A23F85300CB11AD /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049297562A23F85300CB11AD /* AddView.swift */; };
+		0492975B2A24131300CB11AD /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492975A2A24131300CB11AD /* HabitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		049297462A23EC0300CB11AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		049297482A23EC0500CB11AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0492974B2A23EC0500CB11AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		049297522A23F2B900CB11AD /* Habit-Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit-Item.swift"; sourceTree = "<group>"; };
+		049297542A23F37A00CB11AD /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		049297562A23F85300CB11AD /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		0492975A2A24131300CB11AD /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				049297442A23EC0300CB11AD /* Habit_tracking_appApp.swift */,
 				049297462A23EC0300CB11AD /* ContentView.swift */,
+				0492975A2A24131300CB11AD /* HabitView.swift */,
+				049297562A23F85300CB11AD /* AddView.swift */,
+				049297522A23F2B900CB11AD /* Habit-Item.swift */,
+				049297542A23F37A00CB11AD /* Habits.swift */,
 				049297482A23EC0500CB11AD /* Assets.xcassets */,
 				0492974A2A23EC0500CB11AD /* Preview Content */,
 			);
@@ -139,6 +151,10 @@
 			files = (
 				049297472A23EC0300CB11AD /* ContentView.swift in Sources */,
 				049297452A23EC0300CB11AD /* Habit_tracking_appApp.swift in Sources */,
+				049297572A23F85300CB11AD /* AddView.swift in Sources */,
+				0492975B2A24131300CB11AD /* HabitView.swift in Sources */,
+				049297552A23F37A00CB11AD /* Habits.swift in Sources */,
+				049297532A23F2B900CB11AD /* Habit-Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
