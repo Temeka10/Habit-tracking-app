@@ -12,6 +12,7 @@ struct HabitView: View {
     @ObservedObject var description: Habits
     var body: some View {
             ZStack {
+                
                 GeometryReader { geo in
                     Image("background2")
                         .resizable()
