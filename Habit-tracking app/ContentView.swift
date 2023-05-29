@@ -10,9 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingAddHabit = false
     @StateObject var habits = Habits()
-    init() {
-        UITableView.appearance().backgroundColor = .clear
-    }
+   
     var body: some View {
        
         NavigationView {
@@ -26,17 +24,17 @@ struct ContentView: View {
                 }
                 VStack {
                     List {
-                        ForEach(habits.items) { item in
+                        ForEach(0..<habits.items.count, id: \.self) { item in
                             NavigationLink {
-                                
+                                HabitView(index: item, description: habits)
                             } label: {
                                 HStack {
                                     VStack(alignment: .leading, spacing: 0) {
                                         
-                                        Text(" \(item.title)")
+                                        Text(" \(habits.items[item].title)")
                                             .font(.headline.weight(.bold))
                                         
-                                        Text("\(item.description)")
+                                        Text("\(habits.items[item].description)")
                                             .font(.subheadline)
                                         
                                         
@@ -45,7 +43,7 @@ struct ContentView: View {
                                     
                                     
                                     Spacer()
-                                    Text("Streak: \(item.count)")
+                                    Text("Streak: \(habits.items[item].count)")
                                         .font(.headline)
                                         .padding(15)
                                         .background(.ultraThickMaterial)
@@ -62,6 +60,13 @@ struct ContentView: View {
                             .fill(.ultraThinMaterial)
                             .frame(width: 370, height: 80)
                             .clipShape(RoundedRectangle(cornerRadius: 10)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .strokeBorder(.white, lineWidth: 5)
+                                .frame(width: 370, height: 80)
+                            
+                        )
+                        
                        
                     }
                     .listStyle(.plain)
@@ -85,7 +90,7 @@ struct ContentView: View {
             }
         }
     }
-    func removeItems(at offsets: IndexSet) {
+    func removeItems(_ offsets: IndexSet) {
         habits.items.remove(atOffsets: offsets)
     }
 

@@ -8,9 +8,11 @@
 import Foundation
 
 
-struct HabitItem: Identifiable, Codable{
+struct HabitItem: Identifiable, Codable, Equatable {
     var id = UUID()
     let title: String
     let description: String
-    let count: Int
+    var date: Date?
+    var date2: Date = Date.now
+    var count: Int = 0
 }

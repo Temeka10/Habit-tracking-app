@@ -12,8 +12,6 @@ struct AddView: View {
     @ObservedObject var habits: Habits
     @State private var title = ""
     @State private var description = ""
-    @State private var count = 0
-    
     var body: some View {
         NavigationView {
             Form {
@@ -24,7 +22,7 @@ struct AddView: View {
             .navigationTitle("Add new habit")
             .toolbar {
                 Button("Save") {
-                    let item = HabitItem(title: title, description: description, count: count)
+                    let item = HabitItem(title: title, description: description)
                     habits.items.append(item)
                     dismiss()
                 }
